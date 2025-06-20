@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}All Reviews{% endblock %}
+
+{% block body %}
+<div class="review-list-container">
+  <h2>All Saved Reviews</h2>
+  <ul class="review-list">
+    {% for review in reviews %}
+      <li>
+        <a href="/reviews/{{ review }}">{{ review.replace('_', ' ').title() }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

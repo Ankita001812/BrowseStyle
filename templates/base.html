@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}BrowseStyle{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+    <script src="{{ url_for('static', filename='jquery-3.6.0.js') }}"></script>
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <!-- <h1><a href="/">BrowseStyle</a></h1> -->
+        <nav>
+            <ul>
+                <li class="brand"><a href="/">BrowseStyle</a></li>
+                <li><a href="/write-review">Write a Review</a></li>
+                <li><a href="/all-reviews">All Reviews</a></li>
+                <li><a href="/items">Clothing Items</a></li>
+                <li><a href="/">Home</a></li>
+                <!-- <li><a href="/about">About</a></li> -->
+                <li>{% block links %}{% endblock %}</li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BrowseStyle. All rights reserved.</p>
+    </footer>
+
+    {% block script %}{% endblock %}
+</body>
+
+</html>

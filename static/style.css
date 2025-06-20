@@ -1,0 +1,301 @@
+/* Header styling */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #5f4b48;  
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+
+button {
+  background-color: #57768c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(42, 76, 100, 0.4);
+}
+
+button:hover {
+  background-color: #005fa3;
+  box-shadow: 0 4px 8px rgba(5, 34, 54, 0.6);
+}
+
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li.brand {
+    float: left; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color:#5f4b48;
+}
+
+.brand a {
+    font-size: 24px; 
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* items display */
+
+.cards-container h1,
+.cards-container h4,
+.cards-container p {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.cards-container h4 {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #526aa1;
+  font-style: italic;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+/* 
+.cards-container p {
+    font-size: 2rem;
+    color: #d43535;
+    margin-bottom: 20px;
+} */
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(49, 84, 130);
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgb(49, 84, 130);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.card-name {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.search-container input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6a548d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.search-container input[type="submit"]:hover {
+    background-color: rgb(78, 107, 181);
+}
+
+
+
+  .review-button {
+    background-color: #702054; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .review-button:hover {
+    background-color: #93335b; 
+  }
+
+  .review-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+  }
+
+
+
+
+  .container {
+  max-width: 600px;
+  margin: 50px auto; /* centers horizontally and adds vertical spacing */
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container label {
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+.container input[type="text"],
+.container textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container button {
+
+  width: 250px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: #79507c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.container button:hover {
+  background-color: #155e7d;
+}
+
+
+
+.review-list-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.review-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.review-list li a {
+  text-decoration: none;
+  color: #e5b1da;
+  font-weight: bold;
+}
+
+.review-list li a:hover {
+  text-decoration: underline;
+}
